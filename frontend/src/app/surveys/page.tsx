@@ -25,10 +25,6 @@ export default function SurveysPage() {
     fetchSurveys();
   }, []);
 
-  // const handleViewResults = (id: number, question: string) => {
-  //   router.push(`/surveys/${encodeURIComponent(question)}/results`);
-  // };
-
   const handleViewResults = async (question: string) => {
     try {
         const response = await fetch('http://localhost:5000/id_surveys', {
